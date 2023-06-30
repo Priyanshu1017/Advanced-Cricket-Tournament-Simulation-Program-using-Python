@@ -33,7 +33,8 @@ class Commentator:
         if over % 6 == 0:
             commentary += f"\n End of over {over}."
         if over == 0:
-            print(f"Welcome to the match between {self.match.team1.name} and {self.match.team2.name}.")
+            commentary += f"\n Welcome to the match between {self.match.team1.name} and {self.match.team2.name}."
+            commentary+= f"\n ------------------------------------"
             commentary += f"\n {toss_winner} won the toss and choose to {toss_decision} first."  # Include toss information in the commentary
 
         print("\n",commentary)

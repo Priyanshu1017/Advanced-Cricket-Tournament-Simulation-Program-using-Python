@@ -1,3 +1,4 @@
+import random
 class Player:
     def __init__(self, name, bowling, batting, fielding, running, experience):
         self.name = name
@@ -10,7 +11,7 @@ class Player:
 
     def is_out(self):
         # Perform calculations to determine if the player is out
-        return False  # Placeholder value
+        return random.choice([True, False])
     def add_runs(self, runs):
         self.runs_scored += runs
         
